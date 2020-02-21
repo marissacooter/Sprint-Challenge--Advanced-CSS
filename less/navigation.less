@@ -1,6 +1,5 @@
 // Navigation code here
 header {
-    // border: 5px solid blue;
     display: flex;
     width: 100%;
     flex-flow: column wrap;
@@ -8,6 +7,12 @@ header {
     align-items: center;
 
 
+        @media @phone {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
 
        .logo {
            display: flex;
@@ -17,6 +22,13 @@ header {
            justify-content: center;
            align-items: center;
            margin: 5px;
+
+                @media @phone {
+                    width: 90%;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                }
        }
 
        nav {
@@ -25,6 +37,12 @@ header {
            display: flex;
            flex-flow: row nowrap;
            justify-content: space-evenly;
+
+
+           @media @phone {
+            display: flex;
+            width: 90%;
+        }
 
             a {
                 .font-mixin(bold);
@@ -36,6 +54,11 @@ header {
 
        .header-img {
            border-radius: 10px;
+
+            // @media @phone {
+            //     width: auto;
+            //     max-width: 100%;
+            // }
             
        }
 }

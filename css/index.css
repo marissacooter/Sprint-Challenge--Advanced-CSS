@@ -167,6 +167,14 @@ header {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 header .logo {
   display: flex;
   width: 45%;
@@ -176,12 +184,26 @@ header .logo {
   align-items: center;
   margin: 5px;
 }
+@media (max-width: 500px) {
+  header .logo {
+    width: 90%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header nav {
   margin-bottom: 6px;
   width: 40%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    width: 90%;
+  }
 }
 header nav a {
   font-weight: bold;
@@ -215,16 +237,36 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+@media (max-width: 500px) {
+  .home .intro {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    display: flex;
+    width: 80%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -235,12 +277,26 @@ footer {
 .home .visit-planets p {
   margin-top: 13px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+}
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
@@ -263,9 +319,28 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .walk .walk-text .btn:hover {
   background-color: white;
   color: #00001a;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -275,4 +350,14 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    display: flex;
+    width: 100%;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
 }

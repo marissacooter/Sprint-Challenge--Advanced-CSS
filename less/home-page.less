@@ -3,24 +3,24 @@
 .home {
 
   .intro {
-    // border: 5px solid blue;
-    // background-color: darkseagreen;
     display: flex;
     width: 100%;
-    // idk if i need to change this flex flow later
     flex-flow: column wrap; 
     justify-content: flex-start;
     align-items: flex-start;
 
     h2 {
-      // border: 5px solid darkslateblue;
-      // background-color: deepskyblue;
       padding: 15px;
     }
 
     p {
       padding:0 15px;
     }
+
+        @media @phone {
+          flex-direction: column;
+          width: 100%;
+        }
   
   }
 
@@ -29,11 +29,23 @@
     flex-wrap: wrap;
     width: 100%;
 
+        @media @phone {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          align-items: center;
+        }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+        @media @phone {
+          display: flex;
+          width: 80%;
+        }
     }
   }
 
@@ -47,6 +59,11 @@
     p {
       margin-top: 13px;
     }
+
+      @media @phone {
+        display: flex;
+        flex-flow: column-reverse;
+      }
   }
 
   .walk {
@@ -55,6 +72,13 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
+      @media @phone {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
 
     .walk-text {
       width: 50%;
@@ -76,12 +100,29 @@
         font-size: 15px;
         justify-content: center;
         align-items: center;
+
+          @media @phone {
+            display: flex;
+            width: 100%;
+            padding: 15px;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+          }
       }
 
       .btn:hover {
         background-color: white;
         color: #00001a;
       }
+
+        @media @phone {
+          width: 100%;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
     }
 
     .walk-img {
@@ -93,6 +134,15 @@
         height: auto;
         border-radius: 10px;
       }
+
+        @media @phone {
+          display: flex;
+          width: 100%;
+          flex-flow: column-reverse wrap;
+          justify-content: center;
+          align-items: center;
+          margin: 10px;
+        }
     }
   }
 }// home
