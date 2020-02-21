@@ -9,8 +9,9 @@ header {
 
         @media @phone {
             display: flex;
+            width: 100%;
             flex-flow: column nowrap;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
         }
 
@@ -54,11 +55,20 @@ header {
 
        .header-img {
            border-radius: 10px;
+           width: 100%;
+           display: flex;
+           flex-flow: column wrap;
+           justify-content: center;
+           align-items: center;
 
-            // @media @phone {
-            //     width: auto;
-            //     max-width: 100%;
-            // }
+            @media @phone {s
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                width: 98%;
+                border-radius: 10px;
+                
+            }
             
        }
 }

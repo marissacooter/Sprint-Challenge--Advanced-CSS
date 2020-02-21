@@ -170,8 +170,9 @@ header {
 @media (max-width: 500px) {
   header {
     display: flex;
+    width: 100%;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -213,6 +214,20 @@ header nav a {
 }
 header .header-img {
   border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header .header-img {
+    sdisplay: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 98%;
+    border-radius: 10px;
+  }
 }
 footer {
   color: #22283B;
