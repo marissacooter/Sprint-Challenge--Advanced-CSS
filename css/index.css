@@ -162,9 +162,33 @@ p {
 }
 header {
   border: 5px solid blue;
-  background-color: greenyellow;
   display: flex;
   width: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  width: 45%;
+  font-size: 40px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+header nav {
+  margin-bottom: 6px;
+  width: 40%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+header nav a {
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
 }
 footer {
   color: #22283B;
