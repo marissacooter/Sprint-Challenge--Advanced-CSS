@@ -161,7 +161,6 @@ p {
   margin: 0 auto;
 }
 header {
-  border: 5px solid blue;
   display: flex;
   width: 100%;
   flex-flow: column wrap;
@@ -190,6 +189,9 @@ header nav a {
   text-decoration: none;
   color: black;
 }
+header .header-img {
+  border-radius: 10px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -199,6 +201,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .home .intro h2 {
   padding: 15px;
